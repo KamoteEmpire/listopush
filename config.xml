@@ -57,6 +57,7 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Pushwoosh plugin -->
+
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" source="plugins.cordova.io" />
 
     <!-- Define app icon for each platform. -->
@@ -97,6 +98,8 @@
     -->
 
     <access origin="*"/>
+	
+<access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
 
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/

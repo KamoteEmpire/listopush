@@ -123,3 +123,11 @@ function onPushwooshAndroidInitialized(pushToken)
 	//Pushwoosh Android specific method that cares for the battery
 	//pushNotification.startGeoPushes();
 }
+
+document.addEventListener('push-notification', function(event) {
+    var title = event.notification.title;
+    var userData = event.notification.userdata;
+ 
+    console.warn('user data: ' + JSON.stringify(userData));
+    alert(title);
+});
